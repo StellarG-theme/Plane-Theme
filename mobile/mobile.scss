@@ -1,6 +1,7 @@
 // Variables
 // *------------------------------------------------*
 $color-white: #ffffff;
+$color-grey: #121212;
 $color-black: #000000;
 $color-cream: #FAFFFD;
 $color-mud: #f4d35e;
@@ -8,11 +9,14 @@ $color-royal: #3c73ff;
 $color-green: #2ecc71;
 $color-turqoise: #CCE1EA;
 $color-light-violet: #99bdff;
+$color-red: #fc575e;
 $gradient-pink: linear-gradient(146deg,rgba(255,74,158,0) 55%,rgba(255,74,158,.4) 100%);
 $gradient-blue: linear-gradient(200deg,rgba(255,74,158,0) 45%,rgba(40, 13, 194, 0.068) 100%);
-
+$header-gradient: linear-gradient(315deg, #9cffff 0%, #0079d6 74%);
+$WFC: #0079d6;
 $radius-2: 2px;
 $radius-4: 4px;
+$radius-6: 6px;
 $radius-8: 8px;
 $radius-20: 20px;
 
@@ -24,6 +28,101 @@ $radius-20: 20px;
   background: $color-cream;
   box-shadow: 0 8px 60px 0 rgba(103,151,255,.15), 0 12px 90px 0 rgba(103,151,255,.15);
   border-radius: $radius-20;
+}
+
+// New Topic Button
+// *------------------------------------------------*
+#create-topic {
+  color: $color-white;
+  background-color: $color-red;
+  border-radius: $radius-2;
+  .fa {
+    color: $color-white;
+  }
+  &:hover {
+    background: $color-red;
+    color: $color-white;
+    border-radius: $radius-2;
+    box-shadow: 0 1px 8px $color-red;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+// Container
+// *------------------------------------------------*
+#main-outlet {
+  background: $secondary;
+}
+
+// Buttons
+// *------------------------------------------------*
+.btn {
+  background: #ededed;
+  color: $color-black;
+  border-radius: $radius-6;
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      color: $color-grey;
+      background: $header-gradient;
+      .d-icon {
+        color: $color-black;
+      }
+    }
+  }
+  &:hover, 
+  &.btn-hover {
+    color: $color-black;
+    background: $WFC;
+    .d-icon {
+      color: $WFC;
+    }
+  }
+  &:active, 
+  &.btn-active {
+    background-image: none;
+    background-color: $color-red;
+    color: $color-black;
+    .d-icon {
+      color: $color-black;
+    }
+  } 
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $color-black;
+  .d-icon {
+    color: $color-black;
+  }
+  &:active, 
+  &.btn-active {
+    .d-icon {
+      color: $color-black;
+    }
+  } 
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      background-color: $danger-hover;
+      color: $WFC;
+      .d-icon {
+        color: $WFC;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  .d-icon {
+    color: $WFC;
+  }
+}
+
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  border: 1px solid $primary-low;
 }
 
 // Navigation Bar
