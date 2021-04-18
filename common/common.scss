@@ -49,7 +49,7 @@ body {
 
 .menu-panel {
   border-radius: $radius-6;
-  background-color: $color-grey;
+  background-color: $header-gradient;
   .panel-body-bottom .btn:hover {
     background: $color-red;
   }
@@ -87,22 +87,22 @@ body {
 // Buttons
 // *------------------------------------------------*
 .btn {
-  background: $primary-low;
-  color: $header-gradient;
+  background: #ededed;
+  color: $color-black;
   border-radius: $radius-6;
   .discourse-no-touch & {
     &:hover, 
     &.btn-hover {
-      color: $color-white;
+      color: $color-grey;
       background: $header-gradient;
       .d-icon {
-        color: $color-white;
+        color: $color-black;
       }
     }
   }
   &:hover, 
   &.btn-hover {
-    color: $color-white;
+    color: $color-black;
     background: $WFC;
     .d-icon {
       color: $WFC;
@@ -112,23 +112,23 @@ body {
   &.btn-active {
     background-image: none;
     background-color: $color-red;
-    color: $color-white;
+    color: $color-black;
     .d-icon {
-      color: $color-white;
+      color: $color-black;
     }
   } 
 }
 
 .btn-danger {
   background-color: $danger;
-  color: $color-white;
+  color: $color-black;
   .d-icon {
-    color: $color-white;
+    color: $color-black;
   }
   &:active, 
   &.btn-active {
     .d-icon {
-      color: $color-white;
+      color: $color-black;
     }
   } 
   .discourse-no-touch & {
@@ -145,7 +145,7 @@ body {
 
 .btn-primary {
   .d-icon {
-    color: $color-white;
+    color: $WFC;
   }
 }
 
