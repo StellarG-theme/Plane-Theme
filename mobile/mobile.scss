@@ -15,41 +15,29 @@ $radius-2: 2px;
 $radius-4: 4px;
 $radius-8: 8px;
 $radius-20: 20px;
+
 // Container
 // *------------------------------------------------*
 #main-outlet {
   margin-top: 30px;
-  margin-bottom: 50px;
-  border-radius: 10px;
+  margin-bottom: 30px;
   background: $color-cream;
-  width: 75%;
-  max-width: 1030px;
-  padding: 3em 3em 5%;
-  padding-bottom: 5% !important;
   box-shadow: 0 8px 60px 0 rgba(103,151,255,.15), 0 12px 90px 0 rgba(103,151,255,.15);
-  border-top: 8px solid $color-royal;
+  border-radius: $radius-20;
 }
-
-
 
 // Navigation Bar
 // *------------------------------------------------*
 .nav-pills li a {  
   &.active {
-    background-color: $color-green;
-    border-radius: $radius-2;
-    color: $color-white;
+    color: $color-black;
   }
   &:hover {
-    border-radius: $radius-2;
     background-color: $tertiary;
     color: $color-white;
-    box-shadow: 0 8px 60px 0 rgba(103,151,255,.20), 0 12px 90px 0 rgba(103,151,255,.20);
   }
 }
 
-.list-controls .combo-box .combo-box-header {
-  background: transparent;
-  color: $color-black;
-  border: none;
+.list-controls .navigation-container {
+  margin: 0.8em 9px 1px;
 }
